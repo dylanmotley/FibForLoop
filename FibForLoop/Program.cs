@@ -6,15 +6,16 @@ namespace FibForLoop
     {
         static void Main(string[] args)
         {
-            long num1 = 0;
-            long num2 = 1;
-            long sum = 0;
-            for(long i = 1;i <= 10; i++)
+            int num1 = 0;
+            int num2 = 1;
+            int sum = 0;
+            int counter = 10;
+            for(int i = 1;i <= counter; i++)
             {
-                long num3 = num1;
+                int num3 = num1;
                 num1 = num2;
                 num2 = num3 + num2;
-                Console.WriteLine(num1 + " ");
+                Console.WriteLine(num1);
 
                 if(num1 % 2 == 0)
                 {
